@@ -19,9 +19,12 @@ app.use("/api/doctors", require("./routes/doctorRoutes"));
 app.use("/api/appointments", require("./routes/appointmentRoutes"));
 app.use("/api/bills", require("./routes/billRoutes"));
 
-// ADD THIS HERE
+const path = require("path");
+
+app.use(express.static(path.join(__dirname, "../frontend")));
+
 app.get("/", (req, res) => {
-  res.send("Hospital Management System Backend Running");
+  res.sendFile(path.join(__dirname, "../frontend/Index.html"));
 });
 
 app.listen(5000, () => {
