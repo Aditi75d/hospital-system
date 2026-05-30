@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🏥 Hospital Dashboard</h1>
+
+<!-- PATIENT -->
+<div class="box">
+
+    <h2>Add Patient</h2>
+
+    <input type="text" id="name" placeholder="Patient Name">
+
+    <input type="number" id="age" placeholder="Age">
+
+    <input type="text" id="disease" placeholder="Disease">
+
+    <button onclick="addPatient()">
+        Add Patient
+    </button>
+
+</div>
+
+<!-- DOCTOR -->
+<div class="box">
+
+    <h2>Add Doctor</h2>
+
+    <input type="text" id="doctorName" placeholder="Doctor Name">
+
+    <input type="text" id="specialization" placeholder="Specialization">
+
+    <button onclick="addDoctor()">
+        Add Doctor
+    </button>
+
+</div>
+
+<!-- APPOINTMENT -->
+<div class="box">
+
+    <h2>Book Appointment</h2>
+
+    <input type="text" id="patientName" placeholder="Patient Name">
+
+    <input type="text" id="doctor" placeholder="Doctor Name">
+
+    <input type="date" id="date">
+
+    <input type="time" id="time">
+
+    <button onclick="bookAppointment()">
+        Book Appointment
+    </button>
+
+</div>
+
+<!-- BILL -->
+<div class="box">
+
+    <h2>Billing</h2>
+
+    <input type="text" id="billPatient" placeholder="Patient Name">
+
+    <input type="number" id="amount" placeholder="Amount">
+
+    <button onclick="generateBill()">
+        Generate Bill
+    </button>
+
+</div>
+
+<a href="records.html">
+<button>
+View Records
+</button>
+</a>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
