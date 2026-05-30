@@ -19,6 +19,11 @@ app.use("/api/doctors", require("./routes/doctorRoutes"));
 app.use("/api/appointments", require("./routes/appointmentRoutes"));
 app.use("/api/bills", require("./routes/billRoutes"));
 
+// ADD THIS HERE
+app.get("/", (req, res) => {
+  res.send("Hospital Management System Backend Running");
+});
+
 app.listen(5000, () => {
     console.log("Server running on port 5000");
 });
