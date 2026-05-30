@@ -52,7 +52,7 @@ function addPatient() {
     const age = document.getElementById("age").value;
     const disease = document.getElementById("disease").value;
 
-    fetch("http://localhost:5000/api/patients", {
+    fetch("https://hospital-system-5ntu.onrender.com/api/patients", {
 
         method: "POST",
 
@@ -85,7 +85,7 @@ function addDoctor() {
     const name = document.getElementById("doctorName").value;
     const specialization = document.getElementById("specialization").value;
 
-    fetch("http://localhost:5000/api/doctors", {
+    fetch("https://hospital-system-5ntu.onrender.com/api/doctors", {
 
         method: "POST",
 
@@ -119,7 +119,7 @@ function bookAppointment() {
     const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
 
-    fetch("http://localhost:5000/api/appointments", {
+    fetch("https://hospital-system-5ntu.onrender.com/api/appointments", {
 
         method: "POST",
 
@@ -153,7 +153,7 @@ function generateBill() {
     const patientName = document.getElementById("billPatient").value;
     const amount = document.getElementById("amount").value;
 
-    fetch("http://localhost:5000/api/bills", {
+    fetch("https://hospital-system-5ntu.onrender.com/api/bills", {
 
         method: "POST",
 
@@ -184,7 +184,7 @@ if(document.getElementById("patientList")){
 
     // PATIENTS
 
-    fetch("http://localhost:5000/api/patients")
+    fetch("https://hospital-system-5ntu.onrender.com/api/patients")
 
     .then(res => res.json())
 
@@ -206,7 +206,7 @@ if(document.getElementById("patientList")){
 
     // DOCTORS
 
-    fetch("http://localhost:5000/api/doctors")
+    fetch("https://hospital-system-5ntu.onrender.com/api/doctors")
 
     .then(res => res.json())
 
@@ -228,7 +228,7 @@ if(document.getElementById("patientList")){
 
     // APPOINTMENTS
 
-    fetch("http://localhost:5000/api/appointments")
+    fetch("https://hospital-system-5ntu.onrender.com/api/appointments")
 
     .then(res => res.json())
 
@@ -250,7 +250,7 @@ if(document.getElementById("patientList")){
 
     // BILLS
 
-    fetch("http://localhost:5000/api/bills")
+    fetch("https://hospital-system-5ntu.onrender.com/api/bills")
 
     .then(res => res.json())
 
